@@ -1,15 +1,16 @@
-import Button from "./component/Button";
-import Paraf from "./component/Paraf";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Ar from "./pages/Ar";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <div className='flex flex-col items-center justify-center bg-[#FFF7F6] h-screen w-full'>
-        <Paraf />
-        <Button />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/new-page' element={<Ar />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

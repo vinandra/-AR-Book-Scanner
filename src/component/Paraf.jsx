@@ -3,7 +3,7 @@ import logo from "../assets/imagelogo.png";
 export default function Paraf() {
   return (
     <>
-      <div className='py-28'>
+      <div className='py-4'>
         <img src={logo} alt='' className='size-40 rounded-full' />
       </div>
       <div className='px-5 text-center'>
